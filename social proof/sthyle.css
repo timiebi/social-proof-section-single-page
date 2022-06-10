@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", 'quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* @import url('http://fonts.cdnfonts.com/css/league-spartan' */
+    /* ); */
+}
+/* body{
+    background-image: url("/assets/image/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+.bg-img{
+    position: fixed;
+    left: 45%;
+    top: 10%;
+    /* z-index: -1; */
+}
+
+.bg-img-top{
+    position: fixed;
+    bottom: 65%;
+    right: 40%;
+}
+
+.bg-mbl-top{
+    display: none;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 88%;
+    background: hsl(0, 0%, 100%);
+}
+
+/* top header start */
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em;
+    width: 80%;
+}
+h1{
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 2.5rem;
+    width: 60%;
+}
+.hp{
+    width: 80% !important;
+    margin-top: 1em;
+    font-size: 1rem;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+p{
+    font-size: .9rem;
+    font-weight: bold;
+}
+header{
+    margin-left: 7em;
+    width: 100%;
+}
+
+/* star rating section start */
+.star_paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    margin-right: 8em;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    width: 100%;
+}
+
+#star{
+    padding: .9em;
+}
+
+.one{
+    width: 90%;
+    /* position: relative; */
+    margin-right: 4em;
+}
+
+.two{
+    width: 94%;
+    margin-left: 4em;
+}
+
+.three{
+    margin-left: 8em;
+    width: 90%;
+
+}
+/* start rating section end */
+
+/* top header section end */
+
+/* comment section start */
+#review_comment_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header_image-paragraph{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* image on the comment section */
+#image{
+    max-width: 100%;
+    width: 15%;
+    height: auto;
+    margin: .6em;
+    border-radius: 50%;
+}
+.image_name_container{
+    margin: 1em;
+    text-align: center;
+    width: 100%;
+}
+#review_comment_container{
+    background-color: hsl(300, 43%, 22%);
+    /* text-align: center; */
+    border-radius: 6px;
+    padding: .6em;
+    margin: .5em;
+    width: 22%;
+}
+
+.review_main_paragragh{
+    text-align: center;
+    /* width: 100%; */
+    color: hsl(0, 0%, 100%);
+    font-size: .68rem;
+    line-height: 12pt;
+    padding: 1em;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+
+.image_name{
+    color: hsl(0, 0%, 100%);
+    font-size: .7rem;
+}
+
+.purple_paragrpah{
+    color: hsl(333, 80%, 67%);
+    padding: .2em;
+    font-size: .7rem;
+}
+
+.irene{
+    padding: 1.5em;
+}
+
+.Anne{
+    padding: 1.5em;
+}
+
+.colton_smith{
+    position: relative;
+    /* margin: 20em; */
+    right: 18px;
+    bottom: 22px;
+}
+.anne_wallace{
+    position: relative;
+    left: 18px;
+    top: 23px;
+
+}
+/* comment section section end */
+
+/* media queries */
+@media screen and (max-width: 375px) {
+    main{
+        width: 80%;
+    }
+
+    .bg-img,.bg-img-top{
+        display: none;
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    header{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 1em;
+    }
+
+    .hp{
+        font-size: .9rem !important;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 2em;
+        /* padding: .2em; */
+        width: 90%;
+    }
+
+    p{
+        font-size: .7rem;
+    }
+
+    #rating_section{
+        width: 100%;
+        flex-direction: column;
+        margin-right: 4em;
+        margin-top: 2em;   
+    }
+
+
+    #rating_container{
+        width: 100%;
+        /* margin: 0 auto; */
+        margin: 1em;
+    }
+
+    .star_paragraph{
+        flex-direction: column;
+    }
+
+    .str{
+        width: 10%;
+    }
+
+    .rating_paragragh{
+        margin-bottom: .8em;
+        color: hsl(300, 43%, 22%);
+        font-weight: bold;
+    }
+
+    #review_comment_section{
+        flex-direction: column;
+        padding-top: 4em;
+    }
+
+    #review_comment_container{
+        width: 80%;
+        padding: .7em;
+        left: 0;
+        right: 0;
+    }
+
+    .image_name, .purple_paragrpah{
+        width: 80%;
+    }
+
+    .bg-mbl-top{
+        display: block;
+        position: fixed;
+        bottom: 88%;
+        left: 20%;
+    }
+}
